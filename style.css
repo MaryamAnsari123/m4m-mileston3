@@ -1,0 +1,105 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: bisque;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1{
+    text-align: center;
+    color: white;
+    background: black;
+}
+
+h2 {
+    color: black;
+    background-color: rgb(228, 191, 147);
+    width: 70%;
+    padding: 10px;
+    margin-top: 5px;
+    margin: 20px auto;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: medium ;
+    font-weight: 800;
+    font-family: century Gothic;
+}
+
+input, textarea {
+    width: 70%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    width: 70%;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.resume-preview {
+    margin-top: 10px;
+    border: 1px solid black;
+    background-color: rgb(115, 175, 201);
+    text-align: center;
+}
+
+.resume-preview h2 {
+    border: 1px solid black;
+    font-size: 30pt;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 90%;
+}
+
+.resume-preview h3 {
+    border: 1px solid black;
+    font-size: 15pt;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    width: 70%;
+    margin: auto;
+}
+
+.resume-preview p {
+    font-size: 12pt;
+    font-weight: 700;
+}
+
+/* set Mobile screen*/
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        display: flex;
+    }
+    body {
+        font-size: 0.5rem;
+    }
+    h1 , h2 , h3 {
+        font-size: 0.6rem;
+    }
+}

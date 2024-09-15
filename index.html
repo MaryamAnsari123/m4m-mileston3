@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Static Resume Builder</h1>
+
+        <!-- Form for user input -->
+        <form id="resume-form">
+            <h2>Personal Information</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name here..." required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email Address here..." required><br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number here..." required><br>
+
+            <hr size="5" color="black">
+
+            <h2>Education</h2>
+            <label for="education">Highest Qualification:</label>
+            <input type="text" id="education" name="education" placeholder="Enter your Highest Qulification here..." required><br>
+
+            <hr size="5" color="black">
+
+            <h2>Work Experience</h2>
+            <label for="work">Work Experience:</label>
+            <textarea id="work" name="work" rows="3" placeholder="Enter your Work Experience here..." required></textarea><br>
+
+            <hr size="5" color="black">
+
+            <h2>Skills</h2>
+            <label for="skills">Skills (comma separated):</label>
+            <textarea id="skills" name="skills" rows="4" placeholder="Enter your Soft and Technical skills here..." required></textarea><br>
+
+            <hr size="8" color="#0056b3">
+            <button type="button" onclick="generateResume()">Generate Resume</button>
+        </form>
+
+        <!-- Preview section -->
+        <h2 style="background-color: rgb(160, 124, 80);">Your Resume</h2>
+        <div id="resume-preview" class="resume-preview"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
