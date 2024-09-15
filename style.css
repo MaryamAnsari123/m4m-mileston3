@@ -91,11 +91,11 @@ button:hover {
 
 /* set Mobile screen*/
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     body {
         font-size: 0.5rem;
     }
-    h1 , h2 , h3 {
+    h1 , h2 {
         font-size: 0.6rem;
     }
 }
